@@ -44,7 +44,4 @@ def create_report():
     return render_template("index.html",message="ご利用ありがとうございます、レポートの作成が完了したことをお知らせいたします。")
 
 if __name__ == "__main__":
-    # port = int(os.getenv("PORT", 5000))
-    # app.run(host="0.0.0.0", port=port)
-    app.debug = True
-    app.run(host='localhost')
+    app.run(host="0.0.0.0", port=5100, debug=True)
